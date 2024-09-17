@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
   <!-- Don't forget to change the title and connect the CSS file -->
   <title>Project Library</title>
 </head>
+
 <body>
-  <h1>Project Library</h1>
+  <script src="script.js"></script>
   <!-- Don't forget to connect the JavaScript file -->
+
+  <section class="movie-library">
+    <h1>Movie Library</h1>
+
+    <!-- Filter and Sorting Controls -->
+    <div class="controls">
+      <!-- Filter Section -->
+      <div class="filter">
+        <h3>Filter by Genre</h3>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="action">Action</button>
+          <button class="filter-btn" data-filter="comedy">Comedy</button>
+          <button class="filter-btn" data-filter="drama">Drama</button>
+          <button class="filter-btn" data-filter="sci-fi">Sci-Fi</button>
+        </div>
+      </div>
+
+      <!-- Sorting Section -->
+      <div class="sort">
+        <h3>Sort by Runtime</h3>
+        <div class="sort-options">
+          <button class="sort-btn" data-sort="descending">Descending</button>
+          <button class="sort-btn active" data-sort="ascending">Ascending</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie Cards -->
+    <div class="movie-grid">
+      <!-- Action Movie -->
+      <div class="movie-card" data-genre="action" data-runtime="120">
+
+      </div>
+
+      <!-- Comedy Movie -->
+      <div class="movie-card" data-genre="comedy" data-runtime="95">
+
+      </div>
+
+      <!-- Drama Movie -->
+      <div class="movie-card" data-genre="drama" data-runtime="140">
+
+      </div>
+
+      <!-- Sci-Fi Movie -->
+      <div class="movie-card" data-genre="sci-fi" data-runtime="130">
+
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+
+
+
+
 </body>
+
 </html>
