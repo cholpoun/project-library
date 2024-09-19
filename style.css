@@ -21,7 +21,7 @@ h1 {
 }
 
 .controls {
-    display: flex;
+    display: grid;
     justify-content: space-around;
     margin-bottom: 20px;
 }
@@ -54,29 +54,36 @@ h3 {
     background-color: #d2f3c9;
 }
 
-.movie-grid {
+.container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     justify-items: center;
+    width: 80%;
+    margin: 0% auto;
+    /* grid-template-rows: 100px 200px; */
+    /*Create 2 rows with heights of 100px and 200px*/
+
 }
 
-.movie-card {
+.card {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
-    width: 250px;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     text-align: left;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
 
-.movie-card:hover {
+.card:hover {
     transform: translateY(-5px);
 }
 
-.movie-card img {
+.card img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
