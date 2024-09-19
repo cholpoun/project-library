@@ -91,3 +91,87 @@ const getMovies = (moviesArray) => {
 
 getMovies(MOVIES);
 
+
+// const allButton = document.getElementById("all-btn");
+// const actionButton = document.getElementById("action-btn");
+// const comedyButton = document.getElementById("comedy-btn");
+
+
+// const filterMovies = () => {
+//   // 1. get the value from the select
+//   const value = filterOptions.value
+//   // console.log('the user selected:', value)
+
+//   if (value === 'all') {
+//     // get all the dogs
+//     getMovies(MOVIES)
+//   } else {
+//     // filter the dogs
+//     const filteredList = DOGS.filter(dog => dog.fur === value)
+//     console.log('filtered list:', filteredList)
+//     getDogs(filteredList)
+//   }
+// }
+
+// allButton.addEventListener("click", allButton);
+
+
+
+// // Add event listeners to filter buttons
+// filterButtons.forEach(button => {
+//   button.addEventListener('click', (event) => {
+//     const selectedGenre = event.target.dataset.filter;
+
+//     // Filter movies based on selected genre or show all if "all" is clicked
+//     const filteredMovies = selectedGenre === 'all'
+//       ? movies  // Show all movies
+//       : movies.filter(movie => movie.genre === selectedGenre);
+
+//     // Display filtered movies
+//     getMovies(filteredMovies);
+
+//     // Remove "active" class from all buttons and add it to the clicked button
+//     filterButtons.forEach(btn => btn.classList.remove('active'));
+//     event.target.classList.add('active');
+//   });
+// });
+
+
+
+document.getElementById('all-btn').addEventListener('click', function () {
+  showMoviesByGenre('all');
+});
+
+document.getElementById('action-btn').addEventListener('click', function () {
+  showMoviesByGenre('action');
+});
+
+
+
+document.getElementById('comedy-btn').addEventListener('click', function () {
+  showMoviesByGenre('comedy');
+});
+
+document.getElementById('drama-btn').addEventListener('click', function () {
+  showMoviesByGenre('drama');
+});
+
+document.getElementById('sci-fi-btn').addEventListener('click', function () {
+  showMoviesByGenre('sci-fi');
+});
+
+function showMoviesByGenre(genre) {
+  const movies = document.querySelectorAll('.movie');
+  movies.forEach(movie => {
+    if (genre === 'all') {
+      movie.style.display = 'block';
+    } else {
+      if (movie.classList.contains(genre)) {
+        movie.style.display = 'block';
+      } else {
+        movie.style.display = 'none';
+      }
+    }
+  });
+}
+

@@ -79,6 +79,11 @@ h3 {
     transition: transform 0.2s;
 }
 
+/*@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; Create a single column layout on small screens
+}*/
+
 .card:hover {
     transform: translateY(-5px);
 }
