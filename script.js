@@ -1,70 +1,121 @@
 const MOVIES = [
+  // Action Movies
   {
-    title: 'The Great Gatsby',
-    director: 'F. Scott Fitzgerald',
-    year: 1925,
-    genre: 'Fiction',
-    rating: 4.2,
-    description:
-      'A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.',
-    img: './books-images/the-great-gatsby.jpg'
+    title: 'Mad Max: Fury Road',
+    director: 'George Miller',
+    year: 2015,
+    genre: 'Action',
+    rating: 8.1,
+    description: 'In a post-apocalyptic wasteland, Max teams up with Furiosa to escape a tyrannical leader and his army.',
+    img: 'https://m.media-amazon.com/images/M/MV5BMjQzOTM2NDAzMV5BMl5BanBnXkFtZTgwNTM5OTQ1NTE@._V1_.jpg'
+  },
+  {
+    title: 'John Wick',
+    director: 'Chad Stahelski',
+    year: 2014,
+    genre: 'Action',
+    rating: 7.4,
+    description: 'An ex-hitman comes out of retirement to track down the gangsters that killed his dog and took everything from him.',
+    img: 'https://m.media-amazon.com/images/M/MV5BMjIwMjI3NTc2M15BMl5BanBnXkFtZTgwNzAyMjU5MDE@._V1_.jpg'
+  },
+  {
+    title: 'Die Hard',
+    director: 'John McTiernan',
+    year: 1988,
+    genre: 'Action',
+    rating: 8.2,
+    description: 'An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party.',
+    img: 'https://m.media-amazon.com/images/M/MV5BMjIxMzc1NjA3Nl5BMl5BanBnXkFtZTgwNzQ4MzI3MTE@._V1_.jpg'
   },
 
+  // Comedy Movies
   {
-    title: 'The Proposal',
-    director: 'Anne Fletcher',
+    title: 'The Hangover',
+    director: 'Todd Phillips',
     year: 2009,
     genre: 'Comedy',
-    rating: 6.8,
-    description:
-      'The Proposal is the story of a tough editor Margaret Tate (Bullock) who forces her assistant Andrew Tate (Ryan Reynolds) to marry her so she can stay in the U.S.',
-    img: './books-images/the-great-gatsby.jpg'
+    rating: 7.7,
+    description: 'Three friends wake up from a bachelor party in Las Vegas with no memory of the previous night and the bachelor missing.',
+    img: 'https://m.media-amazon.com/images/M/MV5BMTYzMjk5NjE5MF5BMl5BanBnXkFtZTcwMTEyOTg2Mg@@._V1_.jpg'
   },
-
   {
-    title: 'The Hippo',
-    director: 'Sven Karlsson',
-    year: 2022,
-    genre: 'Fiction',
-    rating: 4.2,
-    description:
-      'A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.',
-    img: './books-images/the-great-gatsby.jpg'
+    title: 'Superbad',
+    director: 'Greg Mottola',
+    year: 2007,
+    genre: 'Comedy',
+    rating: 7.6,
+    description: 'Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to throw a party goes awry.',
+    img: 'https://m.media-amazon.com/images/M/MV5BMjA2NzI2NTAzNl5BMl5BanBnXkFtZTcwNzk0MzYwMw@@._V1_.jpg'
   },
-
   {
-    title: 'The Fish',
-    director: 'Anne Fletcher',
-    year: 2019,
+    title: 'Anchorman: The Legend of Ron Burgundy',
+    director: 'Adam McKay',
+    year: 2004,
     genre: 'Comedy',
     rating: 7.2,
-    description:
-      'A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.',
-    img: './books-images/the-great-gatsby.jpg'
+    description: 'Ron Burgundy is the top-rated newsman in San Diego in the 1970s, but that\'s all about to change for him and his cronies.',
+    img: 'https://m.media-amazon.com/images/M/MV5BMjI3Mzk4NzQ2MF5BMl5BanBnXkFtZTcwMzM5NzcyMQ@@._V1_.jpg'
   },
 
+  // Drama Movies
   {
-    title: 'The Dog',
-    director: 'Pippi Svensson',
-    year: 2011,
+    title: 'The Shawshank Redemption',
+    director: 'Frank Darabont',
+    year: 1994,
     genre: 'Drama',
-    rating: 0.2,
-    description:
-      'A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.',
-    img: './books-images/the-great-gatsby.jpg'
+    rating: 9.3,
+    description: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
+    img: 'https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmRhMC00ZDIzLWJmNzUtYmFlZDQxODBmNzQ2XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg'
+  },
+  {
+    title: 'Forrest Gump',
+    director: 'Robert Zemeckis',
+    year: 1994,
+    genre: 'Drama',
+    rating: 8.8,
+    description: 'The presidencies of Kennedy and Johnson, Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.',
+    img: 'https://m.media-amazon.com/images/M/MV5BNWIwODk3NmQtNzFjNC00MjhkLWJlZjItYmRjNDRhZmNkNTRlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg'
+  },
+  {
+    title: 'The Godfather',
+    director: 'Francis Ford Coppola',
+    year: 1972,
+    genre: 'Drama',
+    rating: 9.2,
+    description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
+    img: 'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmYtYTAwNi00ZjQ5LWFmNDEtODM1ZjRlNzJmNTRlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg'
   },
 
+  // Sci-Fi Movies
   {
-    title: 'The Baby',
-    director: 'Anne Fletcherzon',
-    year: 2019,
-    genre: 'Comedy',
-    rating: 7.2,
-    description:
-      'A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.',
-    img: './books-images/the-great-gatsby.jpg'
+    title: 'Interstellar',
+    director: 'Christopher Nolan',
+    year: 2014,
+    genre: 'Sci-Fi',
+    rating: 8.6,
+    description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity’s survival.',
+    img: 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3Y2EtYWMwMy00NTBmLWIzNTEtNTc3ZTA0YzNlNmQxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg'
+  },
+  {
+    title: 'The Matrix',
+    director: 'Lana Wachowski, Lilly Wachowski',
+    year: 1999,
+    genre: 'Sci-Fi',
+    rating: 8.7,
+    description: 'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.',
+    img: 'https://m.media-amazon.com/images/M/MV5BNzQzZjA3ZjktNzEwYS00MjQ3LTkzM2ItOTQ5OTg1OTdjNzc1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg'
+  },
+  {
+    title: 'Blade Runner 2049',
+    director: 'Denis Villeneuve',
+    year: 2017,
+    genre: 'Sci-Fi',
+    rating: 8.0,
+    description: 'A young blade runner\'s discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who\'s been missing for thirty years.',
+    img: 'https://m.media-amazon.com/images/M/MV5BMjE2NTQ0OTg0OF5BMl5BanBnXkFtZTgwNjUwOTg2MzI@._V1_.jpg'
   }
-]
+];
+
 
 const container = document.getElementById('container');
 
@@ -98,9 +149,14 @@ document.getElementById('drama-btn').addEventListener('click', function () {
   showMoviesByGenre('Drama');
 });
 
+document.getElementById('sci-fi-btn').addEventListener('click', function () {
+  showMoviesByGenre('Sci-Fi');
+});
+
+
 // Fiction is used here instead of 'Action' for demo purposes
 document.getElementById('action-btn').addEventListener('click', function () {
-  showMoviesByGenre('Fiction');
+  showMoviesByGenre('Action');
 });
 
 function showMoviesByGenre(genre) {
