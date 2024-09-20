@@ -146,3 +146,51 @@ randomMovieButton.addEventListener("click", showRandomMovie);
 
 
 
+// const filterMovies = () => {
+//   // 1. get the value from the select
+//   const value = filterDropdown.value
+
+//   if (value === 'all') {
+//     // get all the moviess
+//     getMovies(MOVIES)
+//   } else {
+//     // filter the dogs
+//     const filteredList = MOVIES.filter(dog => dog.fur === value)
+//     console.log('filtered list:', filteredList)
+//     getDogs(filteredList)
+//   }
+// }
+
+
+// Function to handle sorting
+const sortMovies = (sortBy) => {
+  let sortedMovies = [...MOVIES]; // Create a copy of the array to sort
+
+  switch (sortBy) {
+    case 'title':
+      sortedMovies.sort((a, b) => a.title.localeCompare(b.title)); // Sort alphabetically by title
+      break;
+    case 'director':
+      sortedMovies.sort((a, b) => a.director.localeCompare(b.director)); // Sort alphabetically by director
+      break;
+    case 'year':
+      sortedMovies.sort((a, b) => b.year - a.year); // Sort by year, latest to oldest
+      break;
+    case 'rating':
+      sortedMovies.sort((a, b) => b.rating - a.rating); // Sort by rating, highest to lowest
+      break;
+    case 'all':
+    default:
+      sortedMovies = MOVIES; // No sorting, return to original order
+      break;
+  }
+
+  // Display the sorted movies
+  getMovies(sortedMovies);
+};
+
+// Add event listener to the dropdown for sorting
+document.getElementById('filterDropdown').addEventListener('change', function () {
+  const selectedOption = this.value;
+  sortMovies(selectedOption);
+});
