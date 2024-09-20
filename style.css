@@ -54,6 +54,11 @@ h3 {
     background-color: #d2f3c9;
 }
 
+.randomMovieContainer {
+    margin-top: 20px;
+    padding: 10px;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
