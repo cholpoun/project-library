@@ -61,7 +61,7 @@ const MOVIES = [
     genre: 'Comedy',
     rating: 7.2,
     description: 'Ron Burgundy is the top-rated newsman in San Diego in the 1970s, but that\'s all about to change for him and his cronies.',
-    img: 'https://m.media-amazon.com/images/M/MV5BMjI3Mzk4NzQ2MF5BMl5BanBnXkFtZTcwMzM5NzcyMQ@@._V1_.jpg'
+    img: 'https://www.hollywoodreporter.com/wp-content/uploads/2013/12/anchorman_2.jpg?w=1280'
   },
   {
     title: 'Jurassic Park',
@@ -70,7 +70,7 @@ const MOVIES = [
     genre: 'Sci-Fi',
     rating: 8.3, // IMDb rating as of September 2024 
     description: 'A theme park featuring cloned dinosaurs is opened, but things go wrong when the dinosaurs escape.',
-    img: 'LINK'
+    img: 'https://static1.srcdn.com/wordpress/wp-content/uploads/2023/05/jurassic-park-sequels-dinosaurs-humans-more-important.jpg?q=50&fit=crop&w=1140&h=&dpr=1.5'
 
   },
   {
@@ -80,7 +80,7 @@ const MOVIES = [
     genre: 'Drama',
     rating: 9.3,
     description: 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
-    img: 'https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmRhMC00ZDIzLWJmNzUtYmFlZDQxODBmNzQ2XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg'
+    img: 'https://i.guim.co.uk/img/media/6495f40152ef3ec8408d1ebfe33fdbf28e7f002b/0_0_3062_1838/master/3062..jpg?width=1200&quality=85&auto=format&fit=max&s=58392c0605f25196166513ff721510c8'
   },
   {
     title: 'Forrest Gump',
@@ -89,7 +89,7 @@ const MOVIES = [
     genre: 'Drama',
     rating: 8.8,
     description: 'The presidencies of Kennedy and Johnson, Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.',
-    img: 'https://m.media-amazon.com/images/M/MV5BNWIwODk3NmQtNzFjNC00MjhkLWJlZjItYmRjNDRhZmNkNTRlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg'
+    img: 'https://m.media-amazon.com/images/M/MV5BMTcwNzc4NjE1OV5BMl5BanBnXkFtZTcwMTE5NjkyMQ@@._V1_QL75_UX1640_.jpg'
   },
   {
     title: 'The Godfather',
@@ -98,7 +98,7 @@ const MOVIES = [
     genre: 'Drama',
     rating: 9.2,
     description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
-    img: 'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmYtYTAwNi00ZjQ5LWFmNDEtODM1ZjRlNzJmNTRlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg'
+    img: 'https://wallpapers.com/images/high/the-godfather-red-zigzag-komiqqdvm2mg8eju.webp'
   },
   {
     title: 'Blue Valentine',
@@ -107,7 +107,7 @@ const MOVIES = [
     genre: 'Drama',
     rating: 8.1,  // IMDb rating as of September 2024
     description: `A couple's relationship deteriorates over the course of several years as they navigate the challenges of love, marriage, and parenthood.`,
-    img: 'LINK'
+    img: 'https://www.intofilm.org/intofilm-production/scaledcropped/970x546https%3A/s3-eu-west-1.amazonaws.com/images.cdn.filmclub.org/film__16416-blue-valentine--hi_res-c050c251.jpg/film__16416-blue-valentine--hi_res-c050c251.jpg'
   },
   {
     title: 'Interstellar',
@@ -116,7 +116,7 @@ const MOVIES = [
     genre: 'Sci-Fi',
     rating: 8.6,
     description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity’s survival.',
-    img: 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3Y2EtYWMwMy00NTBmLWIzNTEtNTc3ZTA0YzNlNmQxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg'
+    img: 'https://www.ljudochbild.se/wp-content/uploads/Interstellar_1.jpg'
   },
   {
     title: 'Gladiator',
@@ -124,7 +124,7 @@ const MOVIES = [
     year: 2000, genre: 'Drama',
     rating: 8.7, // IMDb rating as of September 2024 
     description: 'A Roman general is betrayed and sold into slavery, forced to fight as a gladiator in the Colosseum. He seeks revenge against the emperor who ruined his life.',
-    img: 'LINK'
+    img: 'https://m.media-amazon.com/images/M/MV5BMjExOTEyNDgxOV5BMl5BanBnXkFtZTcwMDU0NjcxNA@@._V1_.jpg'
   },
   {
     title: 'Dogville',
@@ -133,7 +133,7 @@ const MOVIES = [
     genre: 'Drama',
     rating: 8.0, // IMDb rating as of September 2024 
     description: 'A woman on the run from the mob seeks refuge in a small town, but the townspeople gradually become increasingly hostile and controlling.',
-    img: 'LINK'
+    img: 'https://www.destudio.com/sites/default/files/styles/project_media/public/2023-06/photo-3-dogville.jpg?h=dfb83448&itok=n68Nrmp-'
   },
   {
     title: 'The Matrix',
@@ -142,7 +142,7 @@ const MOVIES = [
     genre: 'Sci-Fi',
     rating: 8.7,
     description: 'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.',
-    img: 'https://m.media-amazon.com/images/M/MV5BNzQzZjA3ZjktNzEwYS00MjQ3LTkzM2ItOTQ5OTg1OTdjNzc1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg'
+    img: 'https://www.syfy.com/sites/syfy/files/styles/scale_1280/public/2021/03/the-matrix.jpeg'
   },
   {
     title: 'Blade Runner 2049',
@@ -151,7 +151,7 @@ const MOVIES = [
     genre: 'Sci-Fi',
     rating: 8.0,
     description: 'A young blade runner\'s discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who\'s been missing for thirty years.',
-    img: 'https://m.media-amazon.com/images/M/MV5BMjE2NTQ0OTg0OF5BMl5BanBnXkFtZTgwNjUwOTg2MzI@._V1_.jpg'
+    img: 'https://vfxblog.com/wp-content/uploads/2019/11/bfb30-096_0010_wvg_v182_1069ab.jpg?w=1200&h=773'
   },
   {
     title: 'Raiders of the Lost Ark',
@@ -160,7 +160,7 @@ const MOVIES = [
     genre: 'Action',
     rating: 8.7, // IMDb rating as of September 2024 
     description: 'Archaeologist Indiana Jones embarks on a perilous quest to find the Ark of the Covenant before it falls into the wrong hands.',
-    img: 'LINK'
+    img: 'https://www.kennedy-center.org/globalassets/whats-on/millennium-stage/2023/05.-may/film_raidersofthelostark_web.jpg?format=webp&width=1600&quality=70'
 
   },
 ];
