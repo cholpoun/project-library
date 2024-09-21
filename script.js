@@ -1,5 +1,4 @@
 const MOVIES = [
-  // Action Movies
   {
     title: 'Mad Max: Fury Road',
     director: 'George Miller',
@@ -7,7 +6,7 @@ const MOVIES = [
     genre: 'Action',
     rating: 8.1,
     description: 'In a post-apocalyptic wasteland, Max teams up with Furiosa to escape a tyrannical leader and his army.',
-    img: 'https://m.media-amazon.com/images/M/MV5BMjQzOTM2NDAzMV5BMl5BanBnXkFtZTgwNTM5OTQ1NTE@._V1_.jpg'
+    img: 'https://neiloseman.com/wp-content/uploads/2015/05/cars.jpg'
   },
   {
     title: 'John Wick',
@@ -16,7 +15,16 @@ const MOVIES = [
     genre: 'Action',
     rating: 7.4,
     description: 'An ex-hitman comes out of retirement to track down the gangsters that killed his dog and took everything from him.',
-    img: 'https://m.media-amazon.com/images/M/MV5BMjIwMjI3NTc2M15BMl5BanBnXkFtZTgwNzAyMjU5MDE@._V1_.jpg'
+    img: 'https://images.squarespace-cdn.com/content/v1/58c9b86bd1758e1f19dec72a/1501069711610-DG98OOT2PVRWH7K317BJ/SKC+Blog+Hero+John+Wick+2+BW.jpg'
+  },
+  {
+    title: '2001: A Space Odyssey',
+    director: 'Stanley Kubrick',
+    year: 1968,
+    genre: 'Sci-Fi',
+    rating: 8.7,  // IMDb rating as of September 2024
+    description: 'A mysterious black monolith is discovered on the moon, leading to a journey of exploration and philosophical contemplation.',
+    img: 'https://ychef.files.bbci.co.uk/1280x720/p0639ffn.jpg'
   },
   {
     title: 'Die Hard',
@@ -25,10 +33,9 @@ const MOVIES = [
     genre: 'Action',
     rating: 8.2,
     description: 'An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party.',
-    img: 'https://m.media-amazon.com/images/M/MV5BMjIxMzc1NjA3Nl5BMl5BanBnXkFtZTgwNzQ4MzI3MTE@._V1_.jpg'
+    img: 'https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/die-hard-movies-ranked.jpg'
   },
 
-  // Comedy Movies
   {
     title: 'The Hangover',
     director: 'Todd Phillips',
@@ -36,7 +43,7 @@ const MOVIES = [
     genre: 'Comedy',
     rating: 7.7,
     description: 'Three friends wake up from a bachelor party in Las Vegas with no memory of the previous night and the bachelor missing.',
-    img: 'https://m.media-amazon.com/images/M/MV5BMTYzMjk5NjE5MF5BMl5BanBnXkFtZTcwMTEyOTg2Mg@@._V1_.jpg'
+    img: 'https://cdn.europosters.eu/image/750/posters/the-hangover-strips-i8824.jpg'
   },
   {
     title: 'Superbad',
@@ -45,7 +52,7 @@ const MOVIES = [
     genre: 'Comedy',
     rating: 7.6,
     description: 'Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to throw a party goes awry.',
-    img: 'https://m.media-amazon.com/images/M/MV5BMjA2NzI2NTAzNl5BMl5BanBnXkFtZTcwNzk0MzYwMw@@._V1_.jpg'
+    img: 'https://media.vanityfair.com/photos/62fa88ecd703349a746d4ea2/4:3/w_1776,h_1332,c_limit/vf-822-superbad-making-of-005.jpg'
   },
   {
     title: 'Anchorman: The Legend of Ron Burgundy',
@@ -56,8 +63,16 @@ const MOVIES = [
     description: 'Ron Burgundy is the top-rated newsman in San Diego in the 1970s, but that\'s all about to change for him and his cronies.',
     img: 'https://m.media-amazon.com/images/M/MV5BMjI3Mzk4NzQ2MF5BMl5BanBnXkFtZTcwMzM5NzcyMQ@@._V1_.jpg'
   },
+  {
+    title: 'Jurassic Park',
+    director: 'Steven Spielberg',
+    year: 1993,
+    genre: 'Sci-Fi',
+    rating: 8.3, // IMDb rating as of September 2024 
+    description: 'A theme park featuring cloned dinosaurs is opened, but things go wrong when the dinosaurs escape.',
+    img: 'LINK'
 
-  // Drama Movies
+  },
   {
     title: 'The Shawshank Redemption',
     director: 'Frank Darabont',
@@ -85,8 +100,15 @@ const MOVIES = [
     description: 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
     img: 'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmYtYTAwNi00ZjQ5LWFmNDEtODM1ZjRlNzJmNTRlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg'
   },
-
-  // Sci-Fi Movies
+  {
+    title: 'Blue Valentine',
+    director: 'Derek Cianfrance',
+    year: 2010,
+    genre: 'Drama',
+    rating: 8.1,  // IMDb rating as of September 2024
+    description: `A couple's relationship deteriorates over the course of several years as they navigate the challenges of love, marriage, and parenthood.`,
+    img: 'LINK'
+  },
   {
     title: 'Interstellar',
     director: 'Christopher Nolan',
@@ -95,6 +117,23 @@ const MOVIES = [
     rating: 8.6,
     description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity’s survival.',
     img: 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3Y2EtYWMwMy00NTBmLWIzNTEtNTc3ZTA0YzNlNmQxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg'
+  },
+  {
+    title: 'Gladiator',
+    director: 'Ridley Scott',
+    year: 2000, genre: 'Drama',
+    rating: 8.7, // IMDb rating as of September 2024 
+    description: 'A Roman general is betrayed and sold into slavery, forced to fight as a gladiator in the Colosseum. He seeks revenge against the emperor who ruined his life.',
+    img: 'LINK'
+  },
+  {
+    title: 'Dogville',
+    director: 'Lars von Trier',
+    year: 2003,
+    genre: 'Drama',
+    rating: 8.0, // IMDb rating as of September 2024 
+    description: 'A woman on the run from the mob seeks refuge in a small town, but the townspeople gradually become increasingly hostile and controlling.',
+    img: 'LINK'
   },
   {
     title: 'The Matrix',
@@ -113,7 +152,17 @@ const MOVIES = [
     rating: 8.0,
     description: 'A young blade runner\'s discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who\'s been missing for thirty years.',
     img: 'https://m.media-amazon.com/images/M/MV5BMjE2NTQ0OTg0OF5BMl5BanBnXkFtZTgwNjUwOTg2MzI@._V1_.jpg'
-  }
+  },
+  {
+    title: 'Raiders of the Lost Ark',
+    director: 'Steven Spielberg',
+    year: 1981,
+    genre: 'Action',
+    rating: 8.7, // IMDb rating as of September 2024 
+    description: 'Archaeologist Indiana Jones embarks on a perilous quest to find the Ark of the Covenant before it falls into the wrong hands.',
+    img: 'LINK'
+
+  },
 ];
 
 

@@ -15,8 +15,12 @@
 </head>
 
 <body>
+  <header class="hero">
+    <div class="hero-h1">
+      <h1>Move Time</h1>
+    </div>
+  </header>
   <section class="movie-library">
-    <h1>Movie Library</h1>
 
     <!-- Filter and Sorting Controls -->
     <div class="controls">
@@ -34,37 +38,28 @@
       </div>
 
 
-      <!-- Sorting Section -->
-      <!-- <div class="sort">
-        <h3>Sort by Runtime</h3>
-        <div class="sort-options">
-          <button class="sort-btn" data-sort="descending">Descending</button>
-          <button class="sort-btn active" data-sort="ascending">Ascending</button>
-        </div>
-      </div>
-    </div> -->
+
+      <select id="filterDropdown">
+        <option value="all">ALL</option>
+        <option value="title">Title</option> <!--Alphabetical-->
+        <option value="director">Director</option> <!--Alphabetical-->
+        <option value="year">Year</option> <!--From latest to oldest-->
+        <option value="rating">Rating</option> <!--highest to lowest-->
+      </select>
+
+
+
   </section>
 
   <!-- Random Movie Button and Container for dysplaying chosen random movie -->
+  <section class="random-box">
+    <div class="randomMovieButton">
+      <h3>Show a Random Movie</h3>
+      <button id="random-btn">Show Random Movie</button>
+    </div>
 
-  <div class="randomMovie"></div>
-  <h3>Show a Random Movie</h3>
-  <button id="random-btn">Show Random Movie</button>
-  <div id="randomMovieContainer"></div>
-  </div>
-
-
-
-  <select id="filterDropdown">
-    <option value="all">ALL</option>
-    <option value="title">Title</option> <!--Alphabetical-->
-    <option value="director">Director</option> <!--Alphabetical-->
-    <option value="year">Year</option> <!--From latest to oldest-->
-    <option value="rating">Rating</option> <!--highest to lowest-->
-  </select>
-
-
-
+    <div class="randomMovieContainer" id="randomMovieContainer"></div>
+  </section>
   <!-- Movie Cards (grid) -->
   <section class="container" id="container">
   </section>
