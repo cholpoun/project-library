@@ -22,7 +22,7 @@ const MOVIES = [
     director: 'Stanley Kubrick',
     year: 1968,
     genre: 'Sci-Fi',
-    rating: 8.7,
+    rating: 8.7,  // IMDb rating as of September 2024
     description: 'A mysterious black monolith is discovered on the moon, leading to a journey of exploration and philosophical contemplation.',
     img: 'https://ychef.files.bbci.co.uk/1280x720/p0639ffn.jpg'
   },
@@ -68,7 +68,7 @@ const MOVIES = [
     director: 'Steven Spielberg',
     year: 1993,
     genre: 'Sci-Fi',
-    rating: 8.3,
+    rating: 8.3, // IMDb rating as of September 2024 
     description: 'A theme park featuring cloned dinosaurs is opened, but things go wrong when the dinosaurs escape.',
     img: 'https://static1.srcdn.com/wordpress/wp-content/uploads/2023/05/jurassic-park-sequels-dinosaurs-humans-more-important.jpg?q=50&fit=crop&w=1140&h=&dpr=1.5'
 
@@ -105,7 +105,7 @@ const MOVIES = [
     director: 'Derek Cianfrance',
     year: 2010,
     genre: 'Drama',
-    rating: 8.1,
+    rating: 8.1,  // IMDb rating as of September 2024
     description: `A couple's relationship deteriorates over the course of several years as they navigate the challenges of love, marriage, and parenthood.`,
     img: 'https://www.intofilm.org/intofilm-production/scaledcropped/970x546https%3A/s3-eu-west-1.amazonaws.com/images.cdn.filmclub.org/film__16416-blue-valentine--hi_res-c050c251.jpg/film__16416-blue-valentine--hi_res-c050c251.jpg'
   },
@@ -122,7 +122,7 @@ const MOVIES = [
     title: 'Gladiator',
     director: 'Ridley Scott',
     year: 2000, genre: 'Drama',
-    rating: 8.7,
+    rating: 8.7, // IMDb rating as of September 2024 
     description: 'A Roman general is betrayed and sold into slavery, forced to fight as a gladiator in the Colosseum. He seeks revenge against the emperor who ruined his life.',
     img: 'https://m.media-amazon.com/images/M/MV5BMjExOTEyNDgxOV5BMl5BanBnXkFtZTcwMDU0NjcxNA@@._V1_.jpg'
   },
@@ -131,7 +131,7 @@ const MOVIES = [
     director: 'Lars von Trier',
     year: 2003,
     genre: 'Drama',
-    rating: 8.0,
+    rating: 8.0, // IMDb rating as of September 2024 
     description: 'A woman on the run from the mob seeks refuge in a small town, but the townspeople gradually become increasingly hostile and controlling.',
     img: 'https://www.destudio.com/sites/default/files/styles/project_media/public/2023-06/photo-3-dogville.jpg?h=dfb83448&itok=n68Nrmp-'
   },
@@ -158,14 +158,13 @@ const MOVIES = [
     director: 'Steven Spielberg',
     year: 1981,
     genre: 'Action',
-    rating: 8.7,
+    rating: 8.7, // IMDb rating as of September 2024 
     description: 'Archaeologist Indiana Jones embarks on a perilous quest to find the Ark of the Covenant before it falls into the wrong hands.',
     img: 'https://www.kennedy-center.org/globalassets/whats-on/millennium-stage/2023/05.-may/film_raidersofthelostark_web.jpg?format=webp&width=1600&quality=70'
 
   },
 ];
 
-// Function that shows all movies 
 
 const container = document.getElementById('container');
 
@@ -203,10 +202,11 @@ document.getElementById('sci-fi-btn').addEventListener('click', function () {
   showMoviesByGenre('Sci-Fi');
 });
 
+
+// Fiction is used here instead of 'Action' for demo purposes
 document.getElementById('action-btn').addEventListener('click', function () {
   showMoviesByGenre('Action');
 });
-
 
 function showMoviesByGenre(genre) {
   let filteredMovies = MOVIES;
@@ -216,7 +216,6 @@ function showMoviesByGenre(genre) {
   }
 
   getMovies(filteredMovies);
-
 
   // Function to select a random movie
   const showRandomMovie = () => {
@@ -229,16 +228,12 @@ function showMoviesByGenre(genre) {
 
 };
 
-// Function to display a random movie and hide others
+// Function to display a random movie
 const showRandomMovie = () => {
-  // Get a random index
   const randomIndex = Math.floor(Math.random() * MOVIES.length);
   const randomMovie = MOVIES[randomIndex];
 
-  // Clear the container first (hide all other movies)
-  container.innerHTML = '';
-
-  // Display only the random movie
+  const randomMovieContainer = document.getElementById("randomMovieContainer");
   randomMovieContainer.innerHTML = `
     <div class="card">
       <h3>${randomMovie.title}</h3>
@@ -251,8 +246,25 @@ const showRandomMovie = () => {
 }
 
 // Add event listener for the "Show Random Movie" button
-document.getElementById('random-btn').addEventListener("click", showRandomMovie);
+const randomMovieButton = document.getElementById('random-btn');
+randomMovieButton.addEventListener("click", showRandomMovie);
 
+
+
+// const filterMovies = () => {
+//   // 1. get the value from the select
+//   const value = filterDropdown.value
+
+//   if (value === 'all') {
+//     // get all the moviess
+//     getMovies(MOVIES)
+//   } else {
+//     // filter the dogs
+//     const filteredList = MOVIES.filter(dog => dog.fur === value)
+//     console.log('filtered list:', filteredList)
+//     getDogs(filteredList)
+//   }
+// }
 
 
 // Function to handle sorting
