@@ -187,28 +187,27 @@ getMovies(MOVIES);
 
 // Filter movies by genre 
 
-document.getElementById('all-btn').addEventListener('click', function () {
+document.getElementById('all-btn').addEventListener('click', () => {
   showMoviesByGenre('all');
 });
 
-document.getElementById('comedy-btn').addEventListener('click', function () {
+document.getElementById('comedy-btn').addEventListener('click', () => {
   showMoviesByGenre('Comedy');
 });
 
-document.getElementById('drama-btn').addEventListener('click', function () {
+document.getElementById('drama-btn').addEventListener('click', () => {
   showMoviesByGenre('Drama');
 });
 
-document.getElementById('sci-fi-btn').addEventListener('click', function () {
+document.getElementById('sci-fi-btn').addEventListener('click', () => {
   showMoviesByGenre('Sci-Fi');
 });
 
-document.getElementById('action-btn').addEventListener('click', function () {
+document.getElementById('action-btn').addEventListener('click', () => {
   showMoviesByGenre('Action');
 });
 
-
-function showMoviesByGenre(genre) {
+const showMoviesByGenre = (genre) => {
   let filteredMovies = MOVIES;
 
   if (genre !== 'all') {
@@ -216,18 +215,8 @@ function showMoviesByGenre(genre) {
   }
 
   getMovies(filteredMovies);
-
-
-  // Function to select a random movie
-  const showRandomMovie = () => {
-    // Get a random index
-    const randomIndex = Math.floor(Math.random() * MOVIES.length);
-
-    // Get the random movie
-    const randomMovie = MOVIES[randomIndex];
-  }
-
 };
+
 
 // Function to display a random movie and hide others
 const showRandomMovie = () => {
@@ -250,9 +239,8 @@ const showRandomMovie = () => {
   `;
 }
 
-// Add event listener for the "Show Random Movie" button
+// Event listener for the "Show Random Movie" button
 document.getElementById('random-btn').addEventListener("click", showRandomMovie);
-
 
 
 // Function to handle sorting
@@ -282,8 +270,9 @@ const sortMovies = (sortBy) => {
   getMovies(sortedMovies);
 };
 
-// Add event listener to the dropdown for sorting
-document.getElementById('filterDropdown').addEventListener('change', function () {
-  const selectedOption = this.value;
+// Event listener to the dropdown for sorting
+
+document.getElementById('filterDropdown').addEventListener('change', (event) => {
+  const selectedOption = event.target.value;
   sortMovies(selectedOption);
 });
